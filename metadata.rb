@@ -1,3 +1,4 @@
+# encoding: UTF-8
 name             'rails_secrets_from_s3'
 maintainer       'kjoyner'
 maintainer_email 'kjoyner'
