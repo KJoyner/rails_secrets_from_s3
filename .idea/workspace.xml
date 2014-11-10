@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8f232e7-8031-4620-8477-f7dcbf801e12" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/attributes/default.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata.rb" afterPath="$PROJECT_DIR$/metadata.rb" />
     </list>
     <ignored path="rails_secrets_from_s3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,21 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="default.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="default.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/recipes/default.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43037975" vertical-offset="186" max-vertical-offset="660">
+            <state vertical-scroll-proportion="0.0" vertical-offset="186" max-vertical-offset="660">
               <caret line="26" column="8" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="metadata.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="metadata.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/metadata.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="474">
+              <caret line="0" column="40" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -50,6 +50,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
               <caret line="1" column="52" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Berksfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Berksfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
+              <caret line="3" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -68,9 +78,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/metadata.rb" />
         <option value="$PROJECT_DIR$/recipes/default.rb" />
         <option value="$PROJECT_DIR$/attributes/default.rb" />
+        <option value="$PROJECT_DIR$/metadata.rb" />
       </list>
     </option>
   </component>
@@ -338,10 +348,10 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/metadata.rb">
+    <entry file="file://$PROJECT_DIR$/recipes/default.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="186" max-vertical-offset="660">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -354,10 +364,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/recipes/default.rb">
+    <entry file="file://$PROJECT_DIR$/Berksfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43037975" vertical-offset="186" max-vertical-offset="660">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
+          <caret line="3" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/metadata.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="474">
+          <caret line="0" column="40" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
           <folding />
         </state>
       </provider>
