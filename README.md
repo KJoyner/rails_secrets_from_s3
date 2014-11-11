@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 # rails_secrets_from_s3-cookbook
 
 TODO: Enter the cookbook description here.
