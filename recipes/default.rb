@@ -18,20 +18,27 @@
 #
 node['deploy'].each do |app_name, deploy_config|
 
-	# determine directories
+	# set the default citadel bucket, allowing it to be overridden
+	node.default['rails_secrets_from_s3']['bucket'] = app_name
+	node.normal['citadel']['bucket'] = node['rails_secrets_from_s3']['bucket']
+
 	app_dir               = "#{deploy_config['deploy_to']}/current"
 	app_shared_dir        = "#{deploy_config['deploy_to']}/shared"
 	app_shared_config_dir = "#{app_shared_dir}/config"
 
-	# set the default citadel bucket
-	node.default['rails_secrets_from_s3']['bucket'] = app_name
-	node.normal['citadel']['bucket'] = node['rails_secrets_from_s3']['bucket']
+	shared_secrets_file = "#{app_shared_config_dir}/secrets.yml"
 
-	file "#{app_shared_config_dir}/secrets.yml" do
-		owner app_owner
-		group app_group
+	file shared_secrets_file do
+		owner deploy_config[:user]
+		group deploy_config[:group]
 		mode '400'
 		content citadel["citadel/secrets.yml"]
+	end
+
+	link "#{app_dir}/config/secrets.yml" do
+		to shared_secrets_file
+		owner deploy_config[:user]
+		group deploy_config[:group]
 	end
 
 end
